@@ -6,6 +6,8 @@ A tiny course project that searches fictional note titles. Python 3 and its stan
 
 From this folder, run `python3 demo.py` and `python3 check_search.py`. On Windows with the Python launcher, use `py -3 demo.py` and `py -3 check_search.py`.
 
+To search from the command line, run `python3 search_notes.py "git"` (or `py -3 search_notes.py "git"`). Each matching title is printed on its own line; if nothing matches, it prints `No matching notes.`.
+
 This is the starter state. Matching is case-insensitive, but surrounding whitespace is not yet ignored. The padded-query check is intentionally expected to fail until the planned change is implemented; the other six cases should pass. That is the real behavior under investigation, not a staged AI mistake.
 
 Task: ignore surrounding whitespace in the query while preserving case-insensitive substring matching, original note order, and empty/whitespace-only queries returning an empty list. Change only search.py. The sample data, caller and supplied checks should remain unchanged.
